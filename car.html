@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel="stylesheet" href="driver.css">
+<link rel="stylesheet" href="style.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>  
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>  
+<script>  
+    $(document).ready(function() 
+        {  
+            $("#datepicker").datepicker();  
+        });  
+</script>  
+<script type="text/javascript" src="car.js"></script>
+<title>Adding a New Car</title>
+</head>
+<body>
+<table width="100%"  cellpadding="10" cellspacing="0" border="0">
+<tr>
+
+<!-- ============ HEADER SECTION ============== -->
+<td colspan="3" class="Site_name" style="height: 100px;" bgcolor="#f0f0f0"><h2>Vehicle Reservation System</b></br>Online booking Portal</h2></td></tr>
+
+
+<!-- ============ NAVIGATION BAR SECTION ============== -->
+<tr><td colspan="3" valign="middle" height="30" bgcolor="#a9ae9f"><a href="test.html">Home</a></td></tr>
+
+
+
+<!-- ============ MIDDLE COLUMN (CONTENT) ============== -->
+<td width="100%" valign="top" bgcolor="#d2d8c7">
+<h4>Add a New Car<br>(<b>All the fields are mandatory</b>)</h4>
+    <form name="htmlform" onsubmit="return test()">
+
+<table id="man" width="30%" style="height: 100%;" align="center" cellpadding="10" cellspacing="0" border="0">
+    <tr><td>Fleet Category: </td><td><select id="select" name="davinder">
+  <option value="123" >Choose a value</option>
+  <option value="sedan">sedan</option>
+  <option value="hatchback">hatchback</option>
+  <option value="luxury">luxury</option>
+  <option value="convertible">convertible</option>
+  <option value="SUV">SUV</option>
+  <option value="pickup truck">pickup truck</option>
+  <option value="large truck">large truck</option>
+  <option value="bus">bus</option>
+  </select><sup>*</sup></td></tr>
+<tr><td>Car Make:</td><td><select id="select" name="davinder1">
+  <option value="123">None</option>
+  <option value="TATA">TATA</option>
+  <option value="Maruti">Maruti Suzuki</option>
+  <option value="Hyundai">Hyundai</option>
+  <option value="Honda">Honda</option>
+  <option value="Fiat">Fiat</option>
+  <option value="Skoda">Skoda</option>
+  <option value="Ford">Ford</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="BMW">BMW</option>
+  <option value="Audi">Audi</option>
+  <option value="Lexus">Lexus</option>
+  
+</select> <sup>*</sup></td></tr>
+<tr><td>Car Model:</td><td><select id="select" name="davinder2">
+  <option value="123">None</option>
+  <option value="TATA">TATA</option>
+  <option value="Maruti">Maruti Suzuki</option>
+  <option value="Hyundai">Hyundai</option>
+  <option value="Honda">Honda</option>
+  <option value="Fiat">Fiat</option>
+  <option value="Skoda">Skoda</option>
+  <option value="Ford">Ford</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="BMW">BMW</option>
+  <option value="Audi">Audi</option>
+  <option value="Lexus">Lexus</option>
+  
+</select><sup>*</sup></td></tr> 
+
+<tr><td>Car Year:</td><td><select id="select" name="davinder3">
+  <option value="123">None</option>
+  <option value="2000">2000</option>
+  <option value="2001">2001</option>
+  <option value="2002">2002</option>
+  <option value="2003">2003</option>
+  <option value="2004">2004</option>
+  <option value="2005">2005</option>
+  <option value="2006">2006</option>
+  <option value="2007">2007</option>
+  <option value="2008">2008</option>
+  <option value="2009">2009</option>
+  <option value="2010">2010</option>
+  <option value="2011">2011</option>
+  <option value="2012">2012</option>
+</select><sup>*</sup></td></tr>
+<tr><td>Date of Purchase: </td><td><input type="textbox" name="mydate" id="datepicker"><sup>*</sup></td></tr>
+<tr><td>VIN:</td><td><input type="textbox" name="vin" maxlength=6 ><sup>*</sup></td></tr>
+<tr><td>Specification:</td><td><input type="textbox" name="spec" ><sup>*</sup></td></tr>
+<tr><td>Mileage: </td><td><input type="textbox" name="hello" maxlength=6 ><sup>*</sup></td></tr>
+<tr><td>Rent per day: </td><td><input type="textbox" name="rent"  maxlength=5><sup>*</sup></td></tr>
+<tr><td>Extra Description:</td><td> <input type="textbox"  name="extra123" maxlength=120><sup>*</sup></td></tr>
+<tr><td><input type="submit" value="submit"  ></td><td><input type="reset" value="Reset" ></td></tr>
+
+</form>
+</table>
+<!-- ============ FOOTER SECTION ============== -->
+<tr><td colspan="3" align="center" height="20" bgcolor="#777d6a">Copyright �</td></tr>
+</table>
+</body>
+
+<html>
+
+
+
+
+
+
+
+

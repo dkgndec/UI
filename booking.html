@@ -1,0 +1,115 @@
+<html>
+<head>
+    
+<link rel="stylesheet" href="driver.css">
+<link rel="stylesheet" href="style.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>  
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>  
+<script>  
+    $(document).ready(function() 
+        {  
+            $("#datepicker").datepicker();  
+        });  
+</script>  
+<script>  
+    $(document).ready(function() 
+        {  
+            $("#datepicker1").datepicker();  
+        });  
+</script>  
+<script type="text/javascript" src="booking.js"></script>
+<title>Car Reservation</title>
+
+<body>
+
+<table id="table" width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+<tr>
+
+<!-- ============ HEADER SECTION ============== -->
+<td colspan="3" class="Site_name" style="height: 100px;" bgcolor="#f0f0f0"><h2>Vehicle Reservation System</b></br>Online booking Portal</h2></td></tr>
+
+
+<!-- ============ NAVIGATION BAR SECTION ============== -->
+<tr><td colspan="3" valign="middle" height="30" bgcolor="#a9ae9f"><a href="test.html">Home</a></td></tr>
+
+
+
+<!-- ============ MIDDLE COLUMN (CONTENT) ============== -->
+<td width="100%" valign="top" bgcolor="#d2d8c7">
+    <h4>Reserve a Car<br>(<b>All the fields are mandatory</b>)</h4>
+    <form name="htmlform" onsubmit="return allnumeric()" method="get">
+    <table id="man" width="30%" style="height: 100%;" align="center" cellpadding="10" cellspacing="0" border="0">
+        <tr><td>Customer Name:</td><td><input type="textbox" id="cname" name="cname"><sup>*</sup></td></tr>
+        <tr><td>Pickup Location:</td><td><select id="select" name="davinder">
+  <option value="123">Choose Location</option><sup>*</sup>
+  <option value="Delhi">Delhi</option>
+  <option value="Gurgaon">Gurgaon</option>
+  <option value="Faridabad">Faridabad</option>,
+  <option value="Noida">Noida</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Jaipur">Jaipur</option>
+  <option value="Ahemdabad">Ahemdabad</option>
+  
+        </select><sup>*</sup></td></tr>
+
+
+<tr><td>Dropoff Location:</td><td><select id="select2" name="davinder1">
+  <option value="1234">Select Location</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Gurgaon">Gurgaon</option>
+  <option value="Faridabad">Faridabad</option>
+  <option value="Noida">Noida</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Jaipur">Jaipur</option>
+  <option value="Ahemdabad">Ahemdabad</option>
+  
+  </select><sup>*</sup></td></tr>
+
+
+<tr><td>Start Date:</td><td><input type="textbox" name="start" id="datepicker"><sup>*</sup></td></tr>
+<tr><td>End Date:</td><td><input type="textbox" name="end" id="datepicker1"><sup>*</sup></td></tr>
+<tr><td>Need accessories:</td><td><input type="radio" id="text1" name="group1" onclick="snehi()" value="Male"> Yes</td></tr> 
+<tr><td></td><td><input type="radio" name="group1" id="text2" value="female" onclick="snehi()" checked> No</td></tr>
+<tr><td><td><input type ="textbox" id="rahul" name="rahul" style="visibility:hidden;" ></td></td></tr>
+<tr><td>Need a driver:</td><td> <input type="radio" name="driver" value="Male"> Yes</td></tr> 
+<tr><td></td><td><input type="radio" name="driver" value="female" checked> No</td></tr>
+<tr><td>Choose insurance:</td><td><select id="select2" name="insurance">
+  <option value="1234">Select insurance</option>
+  <option value="Personal">Personal</option>
+  <option value="collision">collision</option>
+  <option value="Third Party">Third Party</option>
+        </select><sup>*</sup></td></tr>
+
+<tr><td>Car Type:</td><td> <select id="select2" name="cartype">
+  <option value="1234">Select car type</option>
+  <option value="sedan">sedan</option>
+  <option value="hatchback">hatchback</option>
+  <option value="luxury">luxury</option>
+  <option value="convertible">convertible</option>
+  <option value="SUV">SUV</option>
+  <option value="pickup truck">pickup truck</option>
+  <option value="large truck">large truck</option>
+  <option value="bus">bus</option>
+        </select><sup>*</sup></td></tr>
+<tr><td>Number of Kms:</td><td><input type="textbox" name="kms"><sup>*</sup></td></tr>
+<tr><td><input type="submit" value="submit"></td><td><input type="reset" value="Reset" ></td></tr></table>
+</form>
+
+
+
+<!-- ============ FOOTER SECTION ============== -->
+<tr><td colspan="3" align="center" height="20" bgcolor="#777d6a">Copyright@</td></tr>
+</table>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+body {
+    margin: 0px; padding: 0px; font-family: 'Trebuchet MS',verdana;
+}
+table {
+    height: 100%;
+}
+td {
+     bgcolor:#f0f0f0;
+}
+sup
+{color:#FE2E2E;}
+#address {
+    margin-left: 36px;
+}
+#city {
+    margin-left: 62px;
+}
+#email {
+        margin-left: 36px;
+
+}
+#contact {
+    margin-left: 21px;
+}
+label {
+    float: left;
+clear: both;
+position: absolute;
+margin-left: 499px;
+}
+#gender {
+    clear: both;
+}
+#select, #select2, #select3, #select4 {
+    width: 176px;
+    height: 25px;
+}

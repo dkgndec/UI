@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" href="driver.css">
+<link rel="stylesheet" href="style.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>  
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>  
+<script>  
+    $(document).ready(function() 
+        {  
+            $("#datepicker").datepicker();  
+        });  
+
+   </script>  
+<script type="text/javascript" src="driver.js"></script>
+<title>Driver Registration </title>
+</head>
+
+<body>
+
+<table width="100%" cellpadding="10" cellspacing="0" id="table" border="0">
+<tr>
+
+<!-- ============ HEADER SECTION ============== -->
+<td colspan="3" class="Site_name" style="height: 100px;" bgcolor="#f0f0f0"><h2>Vehicle Reservation System</b></br>Online booking Portal</h2></td></tr>
+
+
+<!-- ============ NAVIGATION BAR SECTION ============== -->
+<tr><td colspan="3" valign="middle" height="30" bgcolor="#a9ae9f"><a href="test.html">Home</a></td></tr>
+
+
+
+<!-- ============ MIDDLE COLUMN (CONTENT) ============== -->
+<td width="100%" valign="top" bgcolor="#d2d8c7">
+<h4>Driver Registration<br>(<b>All the fields are mandatory</b>)</h4>
+    <form name="htmlform" onsubmit="return allnumeric()" method="get">
+    
+    First Name: <input type="textbox" id="abc" name="fname"><sup>*</sup><br><hr>
+Last Name: <input type="textbox" name="lastname" ><sup>*</sup><br><br><hr>
+<label>Gender:</label>    <input type="radio" name="group1" id="gender" value="Male"> Male <br><br>
+<input type="radio" name="group1" value="female" checked> Female<br><br>
+<hr>
+Date Of Birth: <input type="text" name="mydate" id="datepicker"><sup>*</sup><br><br><hr>
+Address: <input type="textarea" name="address" id="address"  ><sup>*</sup><br><br><hr>
+City: <input type="text" name="city" id="city"  ><sup>*</sup><br><br><hr>
+E-mail Id:<input type="text" id="email" name="email"><sup>*</sup><br><br><hr>
+Contact no: <input type="text" id="contact" name="abcd"><sup>*</sup><br><br><hr>
+<input type="submit" value="submit" >
+<input type="reset" value="Reset" >
+</form>
+<!-- ============ FOOTER SECTION ============== -->
+<tr><td colspan="3" align="center" height="20" bgcolor="#777d6a">Copyright@</td></tr>
+</table>
+</body>
+
+<html>
+
